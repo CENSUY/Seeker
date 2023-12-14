@@ -100,7 +100,7 @@ Available Templates :
 ### Kali Linux / Arch Linux / Ubuntu / Parrot OS / Termux
 
 ```bash
-git clone https://github.com/thewhiteh4t/seeker.git
+git clone https://github.com/CENSUY/Seeker
 cd seeker/
 chmod +x install.sh
 ./install.sh
@@ -120,7 +120,7 @@ docker pull thewhiteh4t/seeker
 
 ### OSX
 ```bash
-git clone https://github.com/thewhiteh4t/seeker.git
+git clone https://github.com/CENSUY/Seeker
 cd seeker/
 python3 seeker.py
 ````
