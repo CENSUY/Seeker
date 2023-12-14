@@ -101,7 +101,7 @@ Available Templates :
 
 ```bash
 git clone https://github.com/CENSUY/Seeker
-cd seeker/
+cd Seeker/
 chmod +x install.sh
 ./install.sh
 ```
@@ -109,20 +109,20 @@ chmod +x install.sh
 ### BlackArch Linux
 
 ```bash
-sudo pacman -S seeker
+sudo pacman -S Seeker
 ```
 
 ### Docker
 
 ```bash
-docker pull thewhiteh4t/seeker
+docker pull CENSUY/Seeker
 ```
 
 ### OSX
 ```bash
 git clone https://github.com/CENSUY/Seeker
-cd seeker/
-python3 seeker.py
+cd Seeker/
+python3 Seeker.py
 ````
 
 In order to run in tunnel mode, install ngrok by running this command in the terminal:
@@ -135,9 +135,9 @@ ngrok http 8080
 ## Usage
 
 ```bash
-python3 seeker.py -h
+python3 Seeker.py -h
 
-usage: seeker.py [-h] [-k KML] [-p PORT] [-u] [-v]
+usage: Seeker.py [-h] [-k KML] [-p PORT] [-u] [-v]
 
 options:
   -h, --help            show this help message and exit
@@ -175,7 +175,7 @@ Variables:
 ##################
 
 # Step 1 : In first terminal
-$ python3 seeker.py
+$ python3 Seeker.py
 
 # Step 2 : In second terminal start a tunnel service such as ngrok
 $ ./ngrok http 8080
@@ -185,14 +185,14 @@ $ ./ngrok http 8080
 ###########
 
 # Ouput KML File for Google Earth
-$ python3 seeker.py -k <filename>
+$ python3 Seeker.py -k <filename>
 
 # Use Custom Port
-$ python3 seeker.py -p 1337
+$ python3 Seeker.py -p 1337
 $ ./ngrok http 1337
 
 # Pre-select a specific template
-$ python3 seeker.py -t 1
+$ python3 Seeker.py -t 1
 
 ################
 # Docker Usage #
@@ -202,7 +202,7 @@ $ python3 seeker.py -t 1
 $ docker network create ngroknet
 
 # Step 2
-$ docker run --rm -it --net ngroknet --name seeker thewhiteh4t/seeker
+$ docker run --rm -it --net ngroknet --name Seeker CENSUY/seeker
 
 # Step 3
 $ docker run --rm -it --net ngroknet --name ngrok wernight/ngrok ngrok http seeker:8080
